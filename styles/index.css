@@ -40,11 +40,9 @@ main {
   width: 70%;
   border-style: groove;
   border-color: #e98074;
-  margin: 20px auto;
-  justify-items: center;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   overflow-y: visible;
   position: relative;
