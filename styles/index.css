@@ -24,6 +24,7 @@ header {
 
 h1 {
   margin: 0;
+  font-size: 35px;
 }
 
 main {
@@ -52,10 +53,8 @@ main {
   height: 48px;
   fill: #e85a4f;
   position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: 20px;
-  margin-top: -15px;
+  right: 20px;
+  top: -15px;
 }
 
 .card--display-none {
