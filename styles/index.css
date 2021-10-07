@@ -62,6 +62,7 @@ main {
 }
 ul {
   display: flex;
+  flex-wrap: wra;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -79,6 +80,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   height: 100%;
 }
 
@@ -102,11 +104,22 @@ a {
 
 .card__title {
   font-size: 1.1rem;
-  font-weight: 550;
+  text-decoration: underline;
 }
 
 .card__button-tags {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card__tags {
+  padding: 7px;
+  background-color: #eae7dc;
+  color: #e85a4f;
+  border-radius: 10px;
+  width: 70%;
+  border-style: groove;
+  border-color: #e98074;
+  margin: 4px 2px;
 }
