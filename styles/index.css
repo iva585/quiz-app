@@ -24,6 +24,7 @@ header {
 
 h1 {
   margin: 0;
+  font-size: 35px;
 }
 
 main {
@@ -43,7 +44,6 @@ main {
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   overflow-y: visible;
   position: relative;
 }
@@ -53,10 +53,8 @@ main {
   height: 48px;
   fill: #e85a4f;
   position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: 20px;
-  margin-top: -15px;
+  right: 20px;
+  top: -15px;
 }
 
 .card--display-none {
@@ -64,12 +62,13 @@ main {
 }
 ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav {
+.navbar {
   display: block;
   color: #ebebee;
   background-color: #05386b;
@@ -77,10 +76,11 @@ nav {
   width: 100%;
 }
 
-.li {
+.navbar__icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   height: 100%;
 }
 
@@ -99,4 +99,26 @@ a {
   text-align: center;
   border-radius: 00.9rem;
   margin: 10px;
+  align-content: center;
+}
+
+.card__title {
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.card__button-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__tags {
+  padding: 7px;
+  background-color: #eae7dc;
+  color: #e85a4f;
+  border-radius: 10px;
+  border-style: groove;
+  border-color: #e98074;
+  margin: 4px 2px;
 }
