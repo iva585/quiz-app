@@ -36,8 +36,7 @@ main {
   background-color: #eae7dc;
   color: #e85a4f;
   border-radius: 0.9rem;
-  box-shadow: 0px 10px 13px -7px #000000,
-    5px 21px 21px 6px rgba(233, 128, 116, 0.51);
+  box-shadow: 0 10px 13px -7px #000, 5px 21px 21px 6px rgba(233, 128, 116, 0.51);
   width: 70%;
   border-style: groove;
   border-color: #e98074;
@@ -60,6 +59,7 @@ main {
 .card--display-none {
   display: none;
 }
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -94,7 +94,7 @@ a {
   height: 1.1rem;
   width: 10rem;
   background-color: #e85a4f;
-  box-shadow: 0px 0px 17px 5px rgba(233, 128, 116, 0.58);
+  box-shadow: 0 0 17px 5px rgba(233, 128, 116, 0.58);
   padding: 0.5rem;
   text-align: center;
   border-radius: 00.9rem;
