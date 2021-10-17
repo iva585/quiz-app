@@ -6,38 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Quiz-App</h1>
+      <h1 class="heading">Quiz-App</h1>
+      <h2 class="heading hidden-js">Bookmarks</h2>
+      <h2 class="heading hidden-js">Create</h2>
+      <h2 class="heading hidden-js">Profile</h2>
     </header>
     <main>
-      <div class="card">
-        <svg class="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <div data-js="card" class="card">
+        <svg
+          data-js="bookmark"
+          class="card__bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
           <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
         </svg>
-        <h2 class="card__title">QUESTION:</h2>
+        <h2 class="card__title uppercase">question:</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
         <div class="card__button-tags">
-          <a class="card__button" href="#">SHOW ANSWER</a>
-          <ul>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card card--display-none">
-        <svg class="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="card__title">QUESTION:</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
-        <div class="card__button-tags">
-          <a class="card__button" href="#">HIDE ANSWER</a>
-          <p>
+          <button data-js="toggle-answer" class="card__button uppercase">
+            <span data-js="hide" class="hidden-js">hide</span
+            ><span data-js="show">show</span> answer
+          </button>
+          <p data-js="answer" class="hidden-js">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
             fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id voluptatem
             repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
@@ -51,32 +46,23 @@
         </div>
       </div>
 
-      <div class="card">
-        <svg class="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <div data-js="card" class="card">
+        <svg
+          data-js="bookmark"
+          class="card__bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
           <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
         </svg>
-        <h2 class="card__title">QUESTION:</h2>
+        <h2 class="card__title uppercase">question:</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
         <div class="card__button-tags">
-          <a class="card__button" href="#">SHOW ANSWER</a>
-          <ul>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card card--display-none">
-        <svg class="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="card__title">QUESTION:</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
-        <div class="card__button-tags">
-          <a class="card__button" href="#">HIDE ANSWER</a>
-          <p>
+          <button data-js="toggle-answer" class="card__button uppercase">
+            <span data-js="hide" class="hidden-js">hide</span
+            ><span data-js="show">show</span> answer
+          </button>
+          <p data-js="answer" class="hidden-js">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
             fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id voluptatem
             repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
@@ -90,32 +76,23 @@
         </div>
       </div>
 
-      <div class="card">
-        <svg class="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <div data-js="card" class="card">
+        <svg
+          data-js="bookmark"
+          class="card__bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
           <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
         </svg>
-        <h2 class="card__title">QUESTION:</h2>
+        <h2 class="card__title uppercase">question:</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
         <div class="card__button-tags">
-          <a class="card__button" href="#">SHOW ANSWER</a>
-          <ul>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card card--display-none">
-        <svg class="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="card__title">QUESTION:</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
-        <div class="card__button-tags">
-          <a class="card__button" href="#">HIDE ANSWER</a>
-          <p>
+          <button data-js="toggle-answer" class="card__button uppercase">
+            <span data-js="hide" class="hidden-js">hide</span
+            ><span data-js="show">show</span> answer
+          </button>
+          <p data-js="answer" class="hidden-js">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
             fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id voluptatem
             repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
