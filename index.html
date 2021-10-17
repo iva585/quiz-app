@@ -10,10 +10,10 @@
   </head>
   <body>
     <header>
-      <h1 class="heading">Quiz-App</h1>
-      <h2 class="heading hidden-js">Bookmarks</h2>
-      <h2 class="heading hidden-js">Create</h2>
-      <h2 class="heading hidden-js">Profile</h2>
+      <h1 data-js="home-title" class="heading">Quiz-App</h1>
+      <h2 data-js="bookmarks-title" class="heading hidden-js">Bookmarks</h2>
+      <h2 data-js="create-title" class="heading hidden-js">Create</h2>
+      <h2 data-js="profile-title" class="heading hidden-js">Profile</h2>
     </header>
     <main>
       <section data-js="home-section">
@@ -107,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section data-js="bookmark-section" class="hidden-js">
+      <section data-js="bookmarks-section" class="hidden-js">
         <div data-js="card" class="card">
           <svg
             data-js="bookmark"
@@ -238,63 +238,59 @@
     <nav class="navbar">
       <ul class="navbar__icons">
         <li>
-          <a href="./#">
-            <svg
-              class="navbar__icon"
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            >
-              <path
-                d="M5 23h-2v-10l8.991-8.005c1.124.998 2.25 1.997 3.378 2.996l2.255 1.997c1.127.999 2.252 2.013 3.376 3.012v10h-2v-9.118l-7.009-6.215-6.991 6.22v9.113zm2-2h10v2h-10v-2zm0-3h10v2h-10v-2zm10-3v2h-10v-2h10zm-5-14l12 10.632-1.328 1.493-10.672-9.481-10.672 9.481-1.328-1.493 12-10.632z"
-              />
-            </svg>
-          </a>
+          <svg
+            data-js="home-icon"
+            class="navbar__icon navbar__icon--active"
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          >
+            <path
+              d="M5 23h-2v-10l8.991-8.005c1.124.998 2.25 1.997 3.378 2.996l2.255 1.997c1.127.999 2.252 2.013 3.376 3.012v10h-2v-9.118l-7.009-6.215-6.991 6.22v9.113zm2-2h10v2h-10v-2zm0-3h10v2h-10v-2zm10-3v2h-10v-2h10zm-5-14l12 10.632-1.328 1.493-10.672-9.481-10.672 9.481-1.328-1.493 12-10.632z"
+            />
+          </svg>
         </li>
         <li>
-          <a href="#"
-            ><svg
-              class="navbar__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-            </svg>
-          </a>
+          <svg
+            data-js="bookmarks-icon"
+            class="navbar__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
         </li>
         <li>
-          <a href="./#">
-            <svg
-              class="navbar__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-5 17l1.006-4.036 3.106 3.105-4.112.931zm5.16-1.879l-3.202-3.202 5.841-5.919 3.201 3.2-5.84 5.921z"
-              />
-            </svg>
-          </a>
+          <svg
+            data-js="create-icon"
+            class="navbar__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-5 17l1.006-4.036 3.106 3.105-4.112.931zm5.16-1.879l-3.202-3.202 5.841-5.919 3.201 3.2-5.84 5.921z"
+            />
+          </svg>
         </li>
         <li>
-          <a href="./#">
-            <svg
-              class="navbar__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
-              />
-            </svg>
-          </a>
+          <svg
+            data-js="profile-icon"
+            class="navbar__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
+            />
+          </svg>
         </li>
       </ul>
     </nav>

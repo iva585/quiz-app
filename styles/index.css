@@ -75,7 +75,6 @@ ul {
 
 .navbar {
   display: block;
-  color: #ebebee;
   background-color: #05386b;
   padding: 2px;
   width: 100%;
@@ -91,6 +90,10 @@ ul {
 
 .navbar__icon {
   fill: #e85a4f;
+}
+
+.navbar__icon--active {
+  fill: #e6cdb1;
 }
 
 .navbar__icon:hover {
