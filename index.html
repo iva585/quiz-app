@@ -10,163 +10,281 @@
   </head>
   <body>
     <header>
-      <h1 class="heading">Quiz-App</h1>
-      <h2 class="heading hidden-js">Bookmarks</h2>
-      <h2 class="heading hidden-js">Create</h2>
-      <h2 class="heading hidden-js">Profile</h2>
+      <h1 data-js="home-title" class="heading">Quiz-App</h1>
+      <h1 data-js="bookmarks-title" class="heading hidden">Bookmarks</h1>
+      <h1 data-js="create-title" class="heading hidden">Create</h1>
+      <h1 data-js="profile-title" class="heading hidden">Profile</h1>
     </header>
     <main>
-      <div data-js="card" class="card">
-        <svg
-          data-js="bookmark"
-          class="card__bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="card__title uppercase">question:</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
-        <div class="card__button-tags">
-          <button data-js="toggle-answer" class="card__button uppercase">
-            <span data-js="hide" class="hidden-js">hide</span
-            ><span data-js="show">show</span> answer
-          </button>
-          <p data-js="answer" class="hidden-js">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
-            fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id voluptatem
-            repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
-          </p>
-          <ul>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-          </ul>
+      <section data-js="home-section">
+        <div data-js="card" class="card">
+          <svg
+            data-js="bookmark"
+            class="card__bookmark"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
+          <h2 class="card__title uppercase">question:</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+          <div class="card__button-tags">
+            <button data-js="toggle-answer" class="card__button uppercase">
+              <span data-js="hide" class="hidden">hide</span><span data-js="show">show</span> answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
+              fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id
+              voluptatem repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
+            </p>
+            <ul>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div data-js="card" class="card">
-        <svg
-          data-js="bookmark"
-          class="card__bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="card__title uppercase">question:</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
-        <div class="card__button-tags">
-          <button data-js="toggle-answer" class="card__button uppercase">
-            <span data-js="hide" class="hidden-js">hide</span
-            ><span data-js="show">show</span> answer
-          </button>
-          <p data-js="answer" class="hidden-js">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
-            fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id voluptatem
-            repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
-          </p>
-          <ul>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-          </ul>
+        <div data-js="card" class="card">
+          <svg
+            data-js="bookmark"
+            class="card__bookmark"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
+          <h2 class="card__title uppercase">question:</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+          <div class="card__button-tags">
+            <button data-js="toggle-answer" class="card__button uppercase">
+              <span data-js="hide" class="hidden">hide</span><span data-js="show">show</span> answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
+              fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id
+              voluptatem repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
+            </p>
+            <ul>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div data-js="card" class="card">
-        <svg
-          data-js="bookmark"
-          class="card__bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="card__title uppercase">question:</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
-        <div class="card__button-tags">
-          <button data-js="toggle-answer" class="card__button uppercase">
-            <span data-js="hide" class="hidden-js">hide</span
-            ><span data-js="show">show</span> answer
-          </button>
-          <p data-js="answer" class="hidden-js">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
-            fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id voluptatem
-            repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
-          </p>
-          <ul>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-            <li class="card__tags">lorem</li>
-          </ul>
+        <div data-js="card" class="card">
+          <svg
+            data-js="bookmark"
+            class="card__bookmark"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
+          <h2 class="card__title uppercase">question:</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+          <div class="card__button-tags">
+            <button data-js="toggle-answer" class="card__button uppercase">
+              <span data-js="hide" class="hidden">hide</span><span data-js="show">show</span> answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
+              fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id
+              voluptatem repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
+            </p>
+            <ul>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
+      <section data-js="bookmarks-section" class="hidden">
+        <div data-js="card" class="card">
+          <svg
+            data-js="bookmark"
+            class="card__bookmark card__bookmark--active"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
+          <h2 class="card__title uppercase">question:</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+          <div class="card__button-tags">
+            <button data-js="toggle-answer" class="card__button uppercase">
+              <span data-js="hide" class="hidden">hide</span><span data-js="show">show</span> answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
+              fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id
+              voluptatem repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
+            </p>
+            <ul>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+            </ul>
+          </div>
+        </div>
+
+        <div data-js="card" class="card">
+          <svg
+            data-js="bookmark"
+            class="card__bookmark card__bookmark--active"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
+          <h2 class="card__title uppercase">question:</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+          <div class="card__button-tags">
+            <button data-js="toggle-answer" class="card__button uppercase">
+              <span data-js="hide" class="hidden">hide</span><span data-js="show">show</span> answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
+              fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id
+              voluptatem repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
+            </p>
+            <ul>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+            </ul>
+          </div>
+        </div>
+
+        <div data-js="card" class="card">
+          <svg
+            data-js="bookmark"
+            class="card__bookmark card__bookmark--active"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
+          <h2 class="card__title uppercase">question:</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+          <div class="card__button-tags">
+            <button data-js="toggle-answer" class="card__button uppercase">
+              <span data-js="hide" class="hidden">hide</span><span data-js="show">show</span> answer
+            </button>
+            <p data-js="answer" class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita dolorem libero
+              fugiat cupiditate dolore eos incidunt, quaerat consequuntur at! Quod nisi id
+              voluptatem repellendus tempora voluptate voluptatibus, perspiciatis deleniti?
+            </p>
+            <ul>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+              <li class="card__tags">lorem</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section data-js="create-section" class="create hidden">
+        <form>
+          <label class="create__text" for="question">Your question:</label>
+          <textarea class="create__textarea"></textarea>
+          <label class="create__text" for="answer">Your answer:</label>
+          <textarea class="create__textarea"></textarea>
+          <label class="create__text" for="tags">Your tags:</label>
+          <input class="create__input-tags" />
+          <button class="create__submit-button uppercase">submit</button>
+        </form>
+      </section>
+
+      <section data-js="profile-section" class="profile hidden">
+        <img
+          class="profile__picture"
+          src="https://source.unsplash.com/featured/300x300?portrait"
+          alt=""
+        />
+        <span class="profile__name">Jane Doe</span>
+        <span class="profile__subtitle">About</span>
+        <p class="profile__about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis ratione,
+          est tenetur maiores minus, obcaecati natus tempore harum, dolor commodi enim! Quod,
+          sapiente. Praesentium illo autem recusandae aliquid harum!
+        </p>
+        <span class="profile__subtitle">Skill Tags</span>
+        <ul class="profile__tags-list">
+          <li class="profile__tags">lorem</li>
+          <li class="profile__tags">lorem</li>
+          <li class="profile__tags">lorem</li>
+          <li class="profile__tags">lorem</li>
+        </ul>
+        <button class="profile__logout-button uppercase">logout</button>
+      </section>
     </main>
 
     <nav class="navbar">
       <ul class="navbar__icons">
         <li>
-          <a href="./#">
-            <svg
-              fill="#e85a4f"
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            >
-              <path
-                d="M5 23h-2v-10l8.991-8.005c1.124.998 2.25 1.997 3.378 2.996l2.255 1.997c1.127.999 2.252 2.013 3.376 3.012v10h-2v-9.118l-7.009-6.215-6.991 6.22v9.113zm2-2h10v2h-10v-2zm0-3h10v2h-10v-2zm10-3v2h-10v-2h10zm-5-14l12 10.632-1.328 1.493-10.672-9.481-10.672 9.481-1.328-1.493 12-10.632z"
-              />
-            </svg>
-          </a>
+          <svg
+            data-js="home-icon"
+            class="navbar__icon navbar__icon--active"
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          >
+            <path
+              d="M5 23h-2v-10l8.991-8.005c1.124.998 2.25 1.997 3.378 2.996l2.255 1.997c1.127.999 2.252 2.013 3.376 3.012v10h-2v-9.118l-7.009-6.215-6.991 6.22v9.113zm2-2h10v2h-10v-2zm0-3h10v2h-10v-2zm10-3v2h-10v-2h10zm-5-14l12 10.632-1.328 1.493-10.672-9.481-10.672 9.481-1.328-1.493 12-10.632z"
+            />
+          </svg>
         </li>
         <li>
-          <a href="./bookmarks.html"
-            ><svg
-              fill="#e85a4f"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-            </svg>
-          </a>
+          <svg
+            data-js="bookmarks-icon"
+            class="navbar__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
         </li>
         <li>
-          <a href="./#">
-            <svg
-              fill="#e85a4f"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-5 17l1.006-4.036 3.106 3.105-4.112.931zm5.16-1.879l-3.202-3.202 5.841-5.919 3.201 3.2-5.84 5.921z"
-              />
-            </svg>
-          </a>
+          <svg
+            data-js="create-icon"
+            class="navbar__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-5 17l1.006-4.036 3.106 3.105-4.112.931zm5.16-1.879l-3.202-3.202 5.841-5.919 3.201 3.2-5.84 5.921z"
+            />
+          </svg>
         </li>
         <li>
-          <a href="./#">
-            <svg
-              fill="#e85a4f"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
-              />
-            </svg>
-          </a>
+          <svg
+            data-js="profile-icon"
+            class="navbar__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
+            />
+          </svg>
         </li>
       </ul>
     </nav>
