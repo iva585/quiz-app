@@ -22,7 +22,7 @@ header {
   font-style: oblique;
 }
 
-h1 {
+.heading {
   margin: 0;
   font-size: 35px;
 }
@@ -84,22 +84,17 @@ ul {
   height: 100%;
 }
 
-a {
-  color: #eae7dc;
-  text-decoration: none;
-}
-
 .card__button {
-  display: block;
-  height: 1.1rem;
-  width: 10rem;
   background-color: #e85a4f;
   box-shadow: 0 0 17px 5px rgba(233, 128, 116, 0.58);
   padding: 0.5rem;
   text-align: center;
+  font-size: 1rem;
   border-radius: 00.9rem;
   margin: 10px;
   align-content: center;
+  color: #eae7dc;
+  text-decoration: none;
 }
 
 .card__title {
@@ -121,4 +116,12 @@ a {
   border-style: groove;
   border-color: #e98074;
   margin: 4px 2px;
+}
+
+.hidden-js {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
