@@ -8,9 +8,9 @@ cards.forEach(card => {
   const bookmark = card.querySelector('[data-js="bookmark"]')
 
   button.addEventListener('click', () => {
-    hideText.classList.toggle('hidden-js')
-    showText.classList.toggle('hidden-js')
-    answer.classList.toggle('hidden-js')
+    hideText.classList.toggle('hidden')
+    showText.classList.toggle('hidden')
+    answer.classList.toggle('hidden')
   })
 
   bookmark.addEventListener('click', () => {
@@ -38,15 +38,15 @@ function getElement(selector) {
 }
 
 iconHome.addEventListener('click', () => {
-  pageHome.classList.remove('hidden-js')
-  pageBookmarks.classList.add('hidden-js')
-  pageCreate.classList.add('hidden-js')
-  pageProfile.classList.add('hidden-js')
+  pageHome.classList.remove('hidden')
+  pageBookmarks.classList.add('hidden')
+  pageCreate.classList.add('hidden')
+  pageProfile.classList.add('hidden')
 
-  titleHome.classList.remove('hidden-js')
-  titleBookmarks.classList.add('hidden-js')
-  titleCreate.classList.add('hidden-js')
-  titleProfile.classList.add('hidden-js')
+  titleHome.classList.remove('hidden')
+  titleBookmarks.classList.add('hidden')
+  titleCreate.classList.add('hidden')
+  titleProfile.classList.add('hidden')
 
   iconHome.classList.add('navbar__icon--active')
   iconBookmarks.classList.remove('navbar__icon--active')
@@ -55,15 +55,15 @@ iconHome.addEventListener('click', () => {
 })
 
 iconBookmarks.addEventListener('click', () => {
-  pageHome.classList.add('hidden-js')
-  pageBookmarks.classList.remove('hidden-js')
-  pageCreate.classList.add('hidden-js')
-  pageProfile.classList.add('hidden-js')
+  pageHome.classList.add('hidden')
+  pageBookmarks.classList.remove('hidden')
+  pageCreate.classList.add('hidden')
+  pageProfile.classList.add('hidden')
 
-  titleHome.classList.add('hidden-js')
-  titleBookmarks.classList.remove('hidden-js')
-  titleCreate.classList.add('hidden-js')
-  titleProfile.classList.add('hidden-js')
+  titleHome.classList.add('hidden')
+  titleBookmarks.classList.remove('hidden')
+  titleCreate.classList.add('hidden')
+  titleProfile.classList.add('hidden')
 
   iconHome.classList.remove('navbar__icon--active')
   iconBookmarks.classList.add('navbar__icon--active')
@@ -72,15 +72,15 @@ iconBookmarks.addEventListener('click', () => {
 })
 
 iconCreate.addEventListener('click', () => {
-  pageHome.classList.add('hidden-js')
-  pageBookmarks.classList.add('hidden-js')
-  pageCreate.classList.remove('hidden-js')
-  pageProfile.classList.add('hidden-js')
+  pageHome.classList.add('hidden')
+  pageBookmarks.classList.add('hidden')
+  pageCreate.classList.remove('hidden')
+  pageProfile.classList.add('hidden')
 
-  titleHome.classList.add('hidden-js')
-  titleBookmarks.classList.add('hidden-js')
-  titleCreate.classList.remove('hidden-js')
-  titleProfile.classList.add('hidden-js')
+  titleHome.classList.add('hidden')
+  titleBookmarks.classList.add('hidden')
+  titleCreate.classList.remove('hidden')
+  titleProfile.classList.add('hidden')
 
   iconHome.classList.remove('navbar__icon--active')
   iconBookmarks.classList.remove('navbar__icon--active')
@@ -89,15 +89,15 @@ iconCreate.addEventListener('click', () => {
 })
 
 iconProfile.addEventListener('click', () => {
-  pageHome.classList.add('hidden-js')
-  pageBookmarks.classList.add('hidden-js')
-  pageCreate.classList.add('hidden-js')
-  pageProfile.classList.remove('hidden-js')
+  pageHome.classList.add('hidden')
+  pageBookmarks.classList.add('hidden')
+  pageCreate.classList.add('hidden')
+  pageProfile.classList.remove('hidden')
 
-  titleHome.classList.add('hidden-js')
-  titleBookmarks.classList.add('hidden-js')
-  titleCreate.classList.add('hidden-js')
-  titleProfile.classList.remove('hidden-js')
+  titleHome.classList.add('hidden')
+  titleBookmarks.classList.add('hidden')
+  titleCreate.classList.add('hidden')
+  titleProfile.classList.remove('hidden')
 
   iconHome.classList.remove('navbar__icon--active')
   iconBookmarks.classList.remove('navbar__icon--active')
