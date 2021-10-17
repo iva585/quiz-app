@@ -56,6 +56,15 @@ main {
   top: -15px;
 }
 
+.card__bookmark:hover {
+  transform: scale(1.2);
+  filter: hue-rotate(-10deg);
+}
+
+.card__bookmark--active {
+  fill: #05386b;
+}
+
 .card--display-none {
   display: none;
 }
